@@ -39,6 +39,13 @@ public class UserController {
 
 	@Autowired
 	UserService userService;
+	
+	/**
+	 * This method is used for register user
+	 * @param request http reques
+	 * @param user data of register user
+	 * @return response of registration
+	 */
 
 	@RequestMapping(value = "/user", method = RequestMethod.POST)
 	public ResponseEntity<?> registerUser(HttpServletRequest request, @RequestBody User user) {
